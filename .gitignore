@@ -1,24 +1,25 @@
-# Compiled class file
+# 1. Java Compiled Code and Build Artifacts (Standard Java Template)
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
-*.nar
 *.ear
-*.zip
-*.tar.gz
-*.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# 2. IDE Folders and Files
+.metadata
+.classpath
+.project
+**/bin/ # Compiled output directory for many Java setups
+
+# Eclipse Files
+.settings/
+.buildpath
+
+# BlueJ Files
+package.bluej
+*~.java
+
+# 3. SQLite and Database Files
+# Ignore the actual database file itself
+*.db
+*.sqlite
+*.sqlite3
