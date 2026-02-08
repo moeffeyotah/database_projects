@@ -1,25 +1,21 @@
-# 1. Java Compiled Code and Build Artifacts (Standard Java Template)
+Ignore compiled Java files
+
 *.class
-*.jar
-*.war
-*.ear
 
-# 2. IDE Folders and Files
-.metadata
-.classpath
+Ignore IDE-specific files
+
 .project
-**/bin/ # Compiled output directory for many Java setups
-
-# Eclipse Files
+.classpath
 .settings/
-.buildpath
+.bluej/
+*.ctxt
 
-# BlueJ Files
-package.bluej
-*~.java
+Ignore local database files (Scripts are used instead)
 
-# 3. SQLite and Database Files
-# Ignore the actual database file itself
 *.db
 *.sqlite
-*.sqlite3
+
+Ignore OS-specific files
+
+.DS_Store
+Thumbs.db
