@@ -38,3 +38,6 @@ The application accepts continuous user input via a `while` loop and supports th
 * **Java Database Connectivity (JDBC):** Successfully establishing a connection to the `sakila.db` file.
 * **SQL Execution:** Executing `INSERT`, `DELETE`, and `SELECT` statements dynamically based on user input.
 * **Console I/O:** Accepting user input and outputting structured results and error messages.
+* **Data Architecture:** Managing relational data with a focus on 3NF normalization principles.
+
+Developed as part of the Database Management curriculum.
