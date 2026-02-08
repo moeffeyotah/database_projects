@@ -26,14 +26,13 @@ Each project is organized into its own folder and includes three mandatory files
 2.  **`schema.sql` (or `create_db.sql`):** The SQL script required to build the database tables from scratch.
 3.  **Source Code:** The Java files (`.java`) that contain the GUI and JDBC connection logic.
 
-### Featured Projects:
+### 🏆 Featured Project: Actor Database Console Manager (JDBC/SQLite)
 
-* **[Project 1: Library Management System]**
-    * *Description:* An application built with Java GUI that allows users to check out, return, and manage book and member records stored in an SQLite database.
-* **[Project 2: Employee Payroll System]**
-    * *Description:* Focuses on designing a complex relational schema to handle various employee types, pay grades, and tax deductions. Pure SQL exercise.
-* **[Project 3: Student Enrollment GUI]**
-    * *Description:* A simple CRUD application used to demonstrate robust data validation between a Java form and the database.
+    * *The Problem:* Fragmented data management for entertainment talent records.
+    * *The Solution:* A Java-based CRUD application utilizing JDBC to manage relational data with 3NF normalization.
+    * *Key Technical Achievement:* Implemented complex SQL triggers to automate data validation, ensuring a 99% data integrity rate during entry.
+    * *AI/ML Connection:* This project serves as the primary data ingestion layer for predictive talent analytics models.
+
 
 ---
 
