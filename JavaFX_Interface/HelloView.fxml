@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns = "http://javafx.com/javafx"
+xmlns:fx = "http://javafx.com/fxml">
+
+    <Label text = "Enter your name"/>
+    <TextField fx:id = "namefield" promptText = "Type name here"/>
+    <Button text = "Say Hello"/>
+    <Label fx:id = "outputLabel"/>
+
+
+</VBox>
