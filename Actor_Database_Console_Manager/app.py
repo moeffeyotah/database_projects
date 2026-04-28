@@ -66,7 +66,7 @@ if menu == "Dashboard":
     st.write("### Actor Update Frequency")
     # Simulating data visualization from your sakila.db 'last_update' field
     chart_data = pd.DataFrame({
-        'Date': pd.date_range(start='2024-01-01', periods=10, freq='M'),
+        'Date': pd.date_range(start='2024-01-01', periods=10, freq='ME'),
         'Updates': [15, 30, 45, 20, 55, 70, 40, 85, 90, 100]
     })
     fig = px.line(chart_data, x='Date', y='Updates', title="CRUD Operation Velocity", template="plotly_dark")
