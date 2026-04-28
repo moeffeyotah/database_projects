@@ -32,12 +32,18 @@ st.markdown("""
 
 # --- DATABASE ENGINE (Mirroring DBActorController.java logic) ---
 def get_connection():
-    # In a real deployment, we'd use the uploaded sakila.db
-    # For this demo, we initialize the Sakila schema in-memory
-    conn = sqlite3.connect('sakila_mirror.db', check_same_thread=False)
-    return conn
+    # Use an absolute path to avoid "Database not found" errors
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    db_path = os.path.join(current_dir, 'sakila.db')
+    
+    if not os.path.exists(db_path):
+        st.error(f"⚠️ Architect Alert: 'sakila.db' not found at {db_path}")
+        return None
+        
+    return sqlite3.connect(db_path, check_same_thread=False)
 
 conn = get_connection()
+    
 
 # --- SIDEBAR NAVIGATION ---
 with st.sidebar:
